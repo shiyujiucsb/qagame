@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg-flat.dtd" >
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body onload="startGame()">
+
+<script type="text/javascript" src="cirno.js"></script>
+<script type="text/javascript" src="nadeko.js"></script>
+<script type="text/javascript" src="touma.js"></script>
+
+
+<script type="text/javascript" src="miku.js"></script>
+
+<script>
+function startGame() {
+	var total = 4;
+	var choice = Math.floor(Math.random()*total);
+	var name;
+	switch (choice) {
+	case 0: Cirno.start(); name="Cirno"; break;
+	case 1: Nadeko.start(); name="Nadeko"; break;
+	case 2: Touma.start(); name="Touma"; break;
+	case 3: Miku.start(); name="Miku"; break;
+	default: break;
+	}
+	document.getElementById("butn").setAttribute("onmouseup", name+".send()");
+}
+
+function refresh() {
+	location.reload()
+}
+</script>
+
+<hr />
+<p id="question"></p>
+<hr />
+<p>Your reply:</p>
+<input type="text" id="reply" /> <br />
+<button id="butn" onmouseup="who.send()">Send</button>
+<p>Click ``Send'' to send your answer back to the assigner.</p>
+<p>The assigner will evaluate your answer very soon.</p>
+</body>
+</html>
+
