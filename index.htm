@@ -13,10 +13,17 @@
 <script type="text/javascript" src="js/meiling.js"></script>
 <script type="text/javascript" src="js/luka.js"></script>
 <script type="text/javascript" src="js/accelerator.js"></script>
+<script type="text/javascript" src="js/ika.js"></script>
+<script type="text/javascript" src="js/arturia.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/tohsakarin.js"></script>
+<script type="text/javascript" src="js/tessa.js"></script>
+<script type="text/javascript" src="js/matohshinji.js"></script>
 
 <script>
+
 function startGame() {
-	var total = 8;
+	var total = 14;
 	var choice = Math.floor(Math.random()*total);
 	var name;
 	switch (choice) {
@@ -28,6 +35,12 @@ function startGame() {
 	case 5: Meiling.start(); name="Meiling"; break;
 	case 6: Luka.start(); name="Luka"; break;
 	case 7: Accelerator.start(); name="Accelerator"; break;
+	case 8: Ika.start(); name="Ika"; break;
+	case 9: Arturia.start(); name="Arturia"; break;
+	case 10: Index.start(); name="Index"; break;
+	case 11: TohsakaRin.start(); name="TohsakaRin"; break;
+	case 12: Tessa.start(); name="Tessa"; break;
+	case 13: MatohShinji.start(); name="MatohShinji"; break;
 	default: document.getElementById("question").innerHTML = "No new emails now.";break;
 	}
 	document.getElementById("butn").setAttribute("onmouseup", name+".send()");

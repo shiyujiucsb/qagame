@@ -30,9 +30,9 @@ var Accelerator = {
 		var text = "<b>From</b>: Accelerator<br />";
         text += "<b>Subject</b>: p-norm<br /><br />";
 		if (p != Infinity)
-			text += "Hi!<br />Could you help me the "+p+"-norm of the following vector?<br > ";
+			text += "Hi!<br />Could you help me compute the "+p+"-norm of the following vector?<br > ";
 		else
-			text += "Hi!<br />Could you help me the &infin;-norm of the following vector?<br > ";
+			text += "Hi!<br />Could you help me compute the &infin;-norm of the following vector?<br > ";
 		text += "<math><msup><mn>("+a+", "+b+", "+c+")</mn><mn>T</mn></msup></math><br /><br /><b>Error less than 0.01</b> is fine. Thank you!<br />";
 		document.getElementById("question").innerHTML = text;
     },

@@ -25,6 +25,7 @@ var Miku = {
 		text += c+" = 0.</math><br />";
 		text += "A good answer should be a precise decimal. <br />"
 		text += "<i>PS: To see MathML in this email, please try Firefox or Camino. Sorry for any inconvenience!</i><br /><br />Thanks,<br /> <i>Miku</i> \\(^o^)/<br />";
+		text += "<img src=\"https://upload.wikimedia.org/wikipedia/zh/f/fe/Hatsune_Miku_V3.png\" height=100></img>";
 		document.getElementById("question").innerHTML = text;
     },
 		

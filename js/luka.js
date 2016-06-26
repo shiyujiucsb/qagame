@@ -18,6 +18,7 @@ var Luka = {
 		text += "<math><msup><mn>("+a1+", "+a2+", "+a3+")</mn><mn>T</mn></msup></math><br />";
 		text += "<math><msup><mn>("+b1+", "+b2+", "+b3+")</mn><mn>T</mn></msup></math><br />";
 		text += "<i>PS: Please use Firefox to see the MathML in this email. Sorry for the incurred inconvenience!</i><br /><br />Thanks,<br /> <i>Luka</i> \\(^o^)/<br />";
+		text += "<img src=\"https://upload.wikimedia.org/wikipedia/zh/7/7d/Luka_Megurine.png\" height=100></img>";
 		document.getElementById("question").innerHTML = text;
     },
 		
