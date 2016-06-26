@@ -19,11 +19,12 @@
 <script type="text/javascript" src="js/tohsakarin.js"></script>
 <script type="text/javascript" src="js/tessa.js"></script>
 <script type="text/javascript" src="js/matohshinji.js"></script>
+<script type="text/javascript" src="js/misakamikoto.js"></script>
 
 <script>
 
 function startGame() {
-	var total = 14;
+	var total = 15;
 	var choice = Math.floor(Math.random()*total);
 	var name;
 	switch (choice) {
@@ -41,6 +42,7 @@ function startGame() {
 	case 11: TohsakaRin.start(); name="TohsakaRin"; break;
 	case 12: Tessa.start(); name="Tessa"; break;
 	case 13: MatohShinji.start(); name="MatohShinji"; break;
+	case 14: MisakaMikoto.start(); name="MisakaMikoto"; break;
 	default: document.getElementById("question").innerHTML = "No new emails now.";break;
 	}
 	document.getElementById("butn").setAttribute("onmouseup", name+".send()");
@@ -52,6 +54,7 @@ function refresh() {
 }
 </script>
 
+<p id="reminder"><b>Reminder</b>: For <a href="https://www.w3.org/Math/">MathML</a>, please use <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> for browsing!</p>
 <hr />
 <p id="question"></p>
 <hr />

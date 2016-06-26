@@ -1,4 +1,4 @@
-// Shinji Matoh's question is about the focus length of a given parabola.
+// Shinji Matoh's question is about the focal length of a given parabola.
 
 var p;
 
@@ -7,8 +7,8 @@ var MatohShinji = {
     start : function() {
 		p = Math.floor(20000*Math.random())-10000;
 		var text = "<b>From</b>: Shinji Matoh<br />";
-        text += "<b>Subject</b>: focus length<br /><br />";
-		text += "Hi!<br />I don't know what focus length is.. Could you help me find the focus length of the following parabola?<br > "
+        text += "<b>Subject</b>: focal length<br /><br />";
+		text += "Hi!<br />I don't know what focal length is.. Could you help me find the focal length of the following parabola?<br > "
 		text += "<math>y = "+p+"<msup>x<mo>2</mo></msup> </math><br />";
 		text += "Btw, the text is available on <a href=\"https://en.wikipedia.org/wiki/Parabola\">Wikipedia</a>. <br />Thanks,<br /> <i>Shinji</i><br/>";
 		text += "<img src=\"https://upload.wikimedia.org/wikipedia/ms/1/1f/Shinji_dan_Rider.JPG\" height=100></img>";
