@@ -5,16 +5,18 @@
 </head>
 <body onload="startGame()">
 
-<script type="text/javascript" src="cirno.js"></script>
-<script type="text/javascript" src="nadeko.js"></script>
-<script type="text/javascript" src="touma.js"></script>
-
-
-<script type="text/javascript" src="miku.js"></script>
+<script type="text/javascript" src="js/cirno.js"></script>
+<script type="text/javascript" src="js/nadeko.js"></script>
+<script type="text/javascript" src="js/touma.js"></script>
+<script type="text/javascript" src="js/miku.js"></script>
+<script type="text/javascript" src="js/rumia.js"></script>
+<script type="text/javascript" src="js/meiling.js"></script>
+<script type="text/javascript" src="js/luka.js"></script>
+<script type="text/javascript" src="js/accelerator.js"></script>
 
 <script>
 function startGame() {
-	var total = 4;
+	var total = 8;
 	var choice = Math.floor(Math.random()*total);
 	var name;
 	switch (choice) {
@@ -22,9 +24,14 @@ function startGame() {
 	case 1: Nadeko.start(); name="Nadeko"; break;
 	case 2: Touma.start(); name="Touma"; break;
 	case 3: Miku.start(); name="Miku"; break;
-	default: break;
+	case 4: Rumia.start(); name="Rumia"; break;
+	case 5: Meiling.start(); name="Meiling"; break;
+	case 6: Luka.start(); name="Luka"; break;
+	case 7: Accelerator.start(); name="Accelerator"; break;
+	default: document.getElementById("question").innerHTML = "No new emails now.";break;
 	}
 	document.getElementById("butn").setAttribute("onmouseup", name+".send()");
+	document.getElementById("reply").value = "";
 }
 
 function refresh() {

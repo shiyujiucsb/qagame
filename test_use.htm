@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN" "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg-flat.dtd" >
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body onload="startGame()">
+
+<script type="text/javascript" src="js/accelerator.js"></script>
+
+<script>
+function startGame() {
+	var name;
+	Accelerator.start(); name="Accelerator";
+	document.getElementById("butn").setAttribute("onmouseup", name+".send()");
+	document.getElementById("reply").value = "";
+}
+
+function refresh() {
+	location.reload()
+}
+</script>
+
+<hr />
+<p id="question"></p>
+<hr />
+<p>Your reply:</p>
+<input type="text" id="reply" /> <br />
+<button id="butn" onmouseup="who.send()">Send</button>
+<p>Click ``Send'' to send your answer back to the assigner.</p>
+<p>The assigner will evaluate your answer very soon.</p>
+</body>
+</html>
+
