@@ -20,11 +20,12 @@
 <script type="text/javascript" src="js/tessa.js"></script>
 <script type="text/javascript" src="js/matohshinji.js"></script>
 <script type="text/javascript" src="js/misakamikoto.js"></script>
+<script type="text/javascript" src="js/matohsakura.js"></script>
 
 <script>
 
 function startGame() {
-	var total = 15;
+	var total = 16;
 	var choice = Math.floor(Math.random()*total);
 	var name;
 	switch (choice) {
@@ -43,6 +44,7 @@ function startGame() {
 	case 12: Tessa.start(); name="Tessa"; break;
 	case 13: MatohShinji.start(); name="MatohShinji"; break;
 	case 14: MisakaMikoto.start(); name="MisakaMikoto"; break;
+	case 15: MatohSakura.start(); name="MatohSakura"; break;
 	default: document.getElementById("question").innerHTML = "No new emails now.";break;
 	}
 	document.getElementById("butn").setAttribute("onmouseup", name+".send()");
