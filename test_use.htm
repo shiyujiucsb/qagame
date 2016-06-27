@@ -5,12 +5,12 @@
 </head>
 <body onload="startGame()">
 
-<script type="text/javascript" src="js/matohsakura.js"></script>
+<script type="text/javascript" src="js/nami.js"></script>
 
 <script>
 function startGame() {
 	var name;
-	MatohSakura.start(); name="MatohSakura";
+	Nami.start(); name="Nami";
 	document.getElementById("butn").setAttribute("onmouseup", name+".send()");
 	document.getElementById("reply").value = "";
 }

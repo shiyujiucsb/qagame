@@ -25,7 +25,7 @@ var MisakaMikoto = {
 		c2 = Math.floor(1000*Math.random())+1;
 		var text = "<b>From</b>: Misaka Mikoto<br />";
         text += "<b>Subject</b>: Eccentricity..<br /><br />";
-		text += "Dear Assignee,<br />Eccentricity of conic sections is defined <a href=\"https://en.wikipedia.org/wiki/Eccentricity_(mathematics)\">here</a>. Note that it's NOT the <i>Linear</i> Eccentricity!<br >";
+		text += "Dear Assignee,<br />Eccentricity of a conic section is defined <a href=\"https://en.wikipedia.org/wiki/Eccentricity_(mathematics)\">here</a>. Note that it's NOT the <i>Linear</i> Eccentricity!<br >";
 		text += "Now the conic section equation is:<br />";
 		text += "<math>"+a2+"<msup>x<mo>2</mo></msup> +"+b2+"<msup>y<mo>2</mo></msup> = "+c2+"</math>.<br />";
 		text += "Please give me the eccentricity of this section! Error less than 0.01 is ok!<br />Thanks,<br /> <i>Mikoto</i><br/>";
